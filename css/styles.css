@@ -133,7 +133,7 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.banner h2 {
+.banner h3 {
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
   /* animation */
