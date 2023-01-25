@@ -214,7 +214,7 @@ p {
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 1200px) {
   .skill {
     width: 25%;
   }
