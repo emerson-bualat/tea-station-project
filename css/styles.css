@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
-/* Variables */
+/* -=-=-=-=-=- Variables -=-=-=-=-=- */
 :root {
   --clr-primary: #678e3e;
   --clr-primary-light: #beed8c;
@@ -144,7 +144,7 @@ p {
     padding: 4rem 1rem;
   }
 }
-/* HEADER */
+/* -=-=-=-=-=- HEADER -=-=-=-=-=- */
 .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -194,7 +194,7 @@ p {
   );
 }
 
-/* SKILLS */
+/* -=-=-=-=-=- SKILLS -=-=-=-=-=- */
 
 .skills {
   background: var(--clr-grey-10);
@@ -242,7 +242,7 @@ p {
   }
 }
 
-/* ABOUT */
+/* -=-=-=-=-=- ABOUT -=-=-=-=-=- */
 .about-img,
 .about-info {
   padding: 2rem 0;
@@ -282,7 +282,7 @@ p {
   }
 }
 
-/* PRODUCTS */
+/* -=-=-=-=-=- PRODUCTS -=-=-=-=-=- */
 
 .products {
   background: var(--clr-grey-10);
@@ -340,5 +340,71 @@ p {
   .product {
     margin: 0;
     padding: 0 1rem;
+  }
+}
+
+/* -=-=-=-=-=- SERVICES -=-=-=-=-=- */
+
+.services-title {
+  margin-top: 4rem;
+  margin-bottom: -4rem;
+  text-align: center;
+}
+
+.service-card {
+  margin: 2rem 0;
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-img {
+  height: 17rem;
+  object-fit: cover;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.service-info {
+  text-align: center;
+  padding: 3rem 1rem 2.5rem 1rem;
+}
+
+.service-info {
+  max-width: 20rem;
+  color: var(--clr-grey-5);
+  margin: 0 auto;
+}
+
+.service-btn {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  padding: 0.375rem 0.5rem;
+  border-radius: var(--radius);
+  font-weight: 400;
+  margin-top: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .service-card {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    /* 100% 45% 90% 5%*/
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .service-card {
+    float: left;
+    width: 30%;
+    margin-right: 3.333%;
+    /* 100% 30% 3.333%*/
   }
 }
